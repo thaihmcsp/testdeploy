@@ -56,4 +56,4 @@ app.post("/profile", upload.single("upFile"), async function (req, res, next) {
   res.json(data);
 });
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
